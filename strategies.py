@@ -1,6 +1,6 @@
 import math
 import pandas as pd
-from .indicators import completed_daily_bars
+from indicators import completed_daily_bars
 
 def trend_join_signal(df: pd.DataFrame) -> str:
     x=completed_daily_bars(df)
