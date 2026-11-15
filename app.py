@@ -8,7 +8,7 @@ from premarket import premarket_scan
 from news import fetch_news
 from risk import position_size
 from config import DEFAULT_WATCHLIST, DEFAULT_CAPITAL, DEFAULT_RISK
-
+from pathlib import Path
 st.set_page_config(page_title="AI Trading Scanner V2.0", page_icon="📈", layout="wide")
 st.title("📈 AI Trading Scanner V2.0")
 st.caption("Separate research project • NSE • Paper trading only • No broker order execution")
