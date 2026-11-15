@@ -1,5 +1,5 @@
 import pandas as pd
-from .market_data import fetch_quote_snapshot
+from market_data import fetch_quote_snapshot
 
 def premarket_scan(symbols):
     rows=[]
