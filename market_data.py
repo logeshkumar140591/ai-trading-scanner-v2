@@ -2,7 +2,7 @@ import yfinance as yf
 import pandas as pd
 
 def fetch_history(symbol: str, period="2y", interval="1d") -> pd.DataFrame:
-    df = yf.download(symbol, period=period, interval=interval, auto_adjust=True, progress=False, threads=False)
+    df = yf.download(symbol, period=period, interval=interval, auto_adjust=False, progress=False, threads=False)
     if df is None or df.empty: return pd.DataFrame()
     if isinstance(df.columns, pd.MultiIndex):
         df.columns = df.columns.get_level_values(0)
