@@ -1,13 +1,13 @@
 import streamlit as st
 import pandas as pd
 from datetime import date, timedelta
-from scanner.market_data import fetch_history, fetch_quote_snapshot
-from scanner.indicators import add_indicators
-from scanner.strategies import trend_join_signal, backtest_trend_join
-from scanner.premarket import premarket_scan
-from scanner.news import fetch_news
-from scanner.risk import position_size
-from scanner.config import DEFAULT_WATCHLIST, DEFAULT_CAPITAL, DEFAULT_RISK
+from market_data import fetch_history, fetch_quote_snapshot
+from indicators import add_indicators
+from strategies import trend_join_signal, backtest_trend_join
+from premarket import premarket_scan
+from news import fetch_news
+from risk import position_size
+from config import DEFAULT_WATCHLIST, DEFAULT_CAPITAL, DEFAULT_RISK
 
 st.set_page_config(page_title="AI Trading Scanner V2.0", page_icon="📈", layout="wide")
 st.title("📈 AI Trading Scanner V2.0")
